@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="menu-container">
+            <h1>CLIENT PORTAL</h1>
+            
+            <div class="step-container">
+                
+                <div class="step">
+                    <div id="stepCircle1" class="step-circle">
+                        <div id="step-circle-1" class="step-circle-1 active"></div>
+                    </div>
+                    <img id="check1" class="check hide" src="./imgs/check.png" alt="">
+                    <div class="step-label">Project type</div>
+                </div>
+                
+                <div id="line1" class="line"></div>
+                
+                <div class="step">
+                    <div id="stepCircle2" class="step-circle">
+                        <div id="step-circle-2">
+                        </div>
+                    </div>
+                    <img id="check2" class="check hide" src="./imgs/check.png" alt="">
+                    <div class="step-label">Patient profile</div>
+                </div>
+                
+                <div id="line2" class="line"></div>
+                
+                <div class="step">
+                    <div id="stepCircle3" class="step-circle">
+                        <div id="step-circle-3">
+                        </div>
+                    </div>
+                    <img id="check3" class="check hide" src="./imgs/check.png" alt="">
+                    <div class="step-label">Patient survey</div>
+                </div>
+
+                <div id="line3" class="line"></div>
+                
+                <div class="step">
+                    <div class="step-circle"><div id="step-circle-4"></div></div>
+                    <div class="step-label">Doctor's Appointment</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="right-section__container">
+                <div id="screen1" class="screen">
+                    <h1>Choose a project type:</h1>
+                    <form>
+                        <div class="option-group">
+                            <input type="radio" name="projectType" id="onDemand">
+                            <label class="option-group__label" for="onDemand">Telehealth on demand</label>
+                        </div>
+                        <div class="option-group">
+                            <input type="radio" name="projectType" id="scheduledMeetings">
+                            <label class="option-group__label" for="scheduledMeetings">Telehealth scheduled meetings</label>
+                        </div>
+                    </form>
+                </div>
+                <div id="screen2" class="screen hide">
+                    <h1>Create patient profile</h1>
+                    <form>
+                       <input type="text" name="" id="" placeholder="Label">
+                       <input type="text" name="" id="" placeholder="Label">
+                       <select name="" id="">
+                           <option value="">Label</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Label</option>
+                        </select>
+                        <input type="text" name="" id="" placeholder="Label">
+                        <input type="text" name="" id="" placeholder="Label">
+                        <input type="text" name="" id="" placeholder="Label">
+                        <input type="text" name="" id="" placeholder="Label">
+
+                    </form>
+                </div>
+                <div id="screen3" class="screen hide">
+                    <h1>Choose a timeslot</h1>
+                    <div class="timeslot-date">
+                    <p>Tue</p>
+                    <p>26 November</p>
+                    </div>
+                    <div class="timeslot-container">
+                        <div class="timeslot">
+                            <p>8:00 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>8:15 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>06:00 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>8:45 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>9:00 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>9:15 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>9:30 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>9:45 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>10:00 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>10:15 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>10:30 AM</p>
+                        </div>
+                        <div class="timeslot">
+                            <p>07:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section__footer">
+                <button class="btn" id="btn-next">Next</button>
+                <button class="btn hide" id="btn-goToVideoCall">GO to video call</button>
+                <div class="advice">
+                    <img src="./imgs/info.png" alt="">
+                    <p>Please note that this is not interface that Medcase provides.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
